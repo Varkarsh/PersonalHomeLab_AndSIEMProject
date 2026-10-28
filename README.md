@@ -21,3 +21,25 @@ More will be added as I continue down this path
 Below will be timestamps of what I have done currently in regards to my homelab.
 
 10-26-2026: Lenovo ThinkCentre M720q has been delivered from EBay, bought another 8GB of DDR4 SODIMM RAM at 2666MHz (As the current system has no AC, only 8GB of RAM, and no SSD, currently save up to buy SSD with ridiculous SSD prices in today's market). Created this Github Repository.
+
+10-27-2026: Created a step by step plan to implement this:
+<img width="740" height="558" alt="image" src="https://github.com/user-attachments/assets/9d6b6ba8-c4da-4007-b8be-71d341eb0962" />
+
+Lenovo specs plan:
+32GB of RAM, 1TB SSD (FIND ONE FOR CHEAP)
+
+Using Wazuh integrated in Ubuntu, Sysmon in Win11, Kali for attacking.
+
+Resource Allocation:
+1. The SIEM / SOC	Ubuntu Server 22.04	Wazuh (All-in-one SIEM/XDR)	2 vCPUs, 8 GB to 12 GB RAM, 50 GB Storage
+2. The Target Endpoint	Windows 10 / 11 Pro	Sysmon (advanced Windows logging) + Wazuh Agent	2 vCPUs, 6 GB to 8 GB RAM, 40 GB Storage
+3. The Attacker	Kali Linux	Nmap, Hydra, Metasploit (to generate attack traffic)	1 vCPU, 2 GB to 4 GB RAM, 30 GB Storage
+I plan to try to use Wazuh All-In-One Approach with ELK Stack
+The concept and utilization justification:
+SIEM & Endpoint Detection Automation Project (Homelab)
+•	Engineered an enterprise-grade SIEM cluster utilizing an all-in-one Wazuh ecosystem built on a bare-metal Proxmox hypervisor layer.
+•	Optimized data pipelines via OpenSearch logging nodes, configuring ingestion parameters for system event logs, process creation tracking, and network sockets.
+•	Designed custom detection matrices mapping threat vectors directly to the MITRE ATT&CK framework, facilitating clear auditing of mock brute-force and privilege escalation attacks.
+•	Analyzed raw security telemetry to isolate indicator-of-compromise (IoC) data points, significantly shortening simulated triage and response windows.
+
+
