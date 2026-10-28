@@ -34,6 +34,8 @@ Resource Allocation:
 1. The SIEM / SOC	Ubuntu Server 22.04	Wazuh (All-in-one SIEM/XDR)	2 vCPUs, 8 GB to 12 GB RAM, 50 GB Storage
 2. The Target Endpoint	Windows 10 / 11 Pro	Sysmon (advanced Windows logging) + Wazuh Agent	2 vCPUs, 6 GB to 8 GB RAM, 40 GB Storage
 3. The Attacker	Kali Linux	Nmap, Hydra, Metasploit (to generate attack traffic)	1 vCPU, 2 GB to 4 GB RAM, 30 GB Storage
+
+
 I plan to try to use Wazuh All-In-One Approach with ELK Stack
 The concept and utilization justification:
 SIEM & Endpoint Detection Automation Project (Homelab)
