@@ -38,6 +38,7 @@ Resource Allocation:
 
 I plan to try to use Wazuh All-In-One Approach with ELK Stack
 The concept and utilization justification:
+
 SIEM & Endpoint Detection Automation Project (Homelab)
 •	Engineered an enterprise-grade SIEM cluster utilizing an all-in-one Wazuh ecosystem built on a bare-metal Proxmox hypervisor layer.
 •	Optimized data pipelines via OpenSearch logging nodes, configuring ingestion parameters for system event logs, process creation tracking, and network sockets.
