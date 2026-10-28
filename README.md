@@ -37,12 +37,11 @@ Resource Allocation:
 
 
 I plan to try to use Wazuh All-In-One Approach with ELK Stack
-The concept and utilization justification:
+The concept and utilization justification: - SIEM & Endpoint Detection Automation Project (Homelab)
 
-- SIEM & Endpoint Detection Automation Project (Homelab)
-•	Engineered an enterprise-grade SIEM cluster utilizing an all-in-one Wazuh ecosystem built on a bare-metal Proxmox hypervisor layer.
-•	Optimized data pipelines via OpenSearch logging nodes, configuring ingestion parameters for system event logs, process creation tracking, and network sockets.
-•	Designed custom detection matrices mapping threat vectors directly to the MITRE ATT&CK framework, facilitating clear auditing of mock brute-force and privilege escalation attacks.
-•	Analyzed raw security telemetry to isolate indicator-of-compromise (IoC) data points, significantly shortening simulated triage and response windows.
+1. Engineered an enterprise-grade SIEM cluster utilizing an all-in-one Wazuh ecosystem built on a bare-metal Proxmox hypervisor layer.
+2. Optimized data pipelines via OpenSearch logging nodes, configuring ingestion parameters for system event logs, process creation tracking, and network sockets.
+3. Designed custom detection matrices mapping threat vectors directly to the MITRE ATT&CK framework, facilitating clear auditing of mock brute-force and privilege escalation attacks.
+4. Analyzed raw security telemetry to isolate indicator-of-compromise (IoC) data points, significantly shortening simulated triage and response windows.
 
 
